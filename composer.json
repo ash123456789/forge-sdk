@@ -1,5 +1,5 @@
 {
-    "name": "themsaid/forge-sdk",
+    "name": "ash123456789/forge-sdk",
     "description": "Laravel Forge PHP SDK (Unofficial)",
     "keywords": ["laravel", "forge"],
     "license": "MIT",
@@ -7,6 +7,9 @@
         {
             "name": "Mohamed Said",
             "email": "themsaid@gmail.com"
+        },
+        {
+            "name": "ash123456789"
         }
     ],
     "require": {
