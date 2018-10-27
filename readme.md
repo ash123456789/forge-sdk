@@ -1,5 +1,8 @@
 # Forge PHP SDK
 
+> This is a fork of the Forge SDK created by Themsaid. It is intended to added additional functionality since the original
+repository has been dead for an extended period of time.
+
 To install the SDK in your project you need to require the package via composer:
 
 ```bash
@@ -39,13 +42,13 @@ On multiple actions supported by this SDK you may need to pass some parameters, 
 
 ```php
 $server = $forge->createServer([
-    "provider"=> "ocean2",
-    "credential_id"=> 1,
-    "name"=> "test-via-api",
-    "size"=> "512MB",
-    "database"=> "test123",
-    "php_version"=> "php71",
-    "region"=> "ams2"
+    'provider'=> 'ocean2',
+    'credential_id'=> 1,
+    'name'=> 'test-via-api',
+    'size'=> '512MB',
+    'database'=> 'test123',
+    'php_version'=> 'php71',
+    'region'=> 'ams2'
 ]);
 ```
 
