@@ -117,6 +117,7 @@ $server->removePapertrail();
 $server->enableOPCache();
 $server->disableOPCache();
 $server->upgradePHP();
+$server->rebootPHP();
 ```
 
 ## Server SSH Keys

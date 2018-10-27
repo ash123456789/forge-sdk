@@ -294,4 +294,12 @@ class Server extends Resource
     {
         return $this->forge->upgradePHP($this->id);
     }
+
+    /**
+     * Reboots the PHP process on the server.
+     */
+    public function rebootPHP()
+    {
+        return $this->forge->rebootPHP($this->id);
+    }
 }
