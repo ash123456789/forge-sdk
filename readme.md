@@ -1,6 +1,6 @@
 # Forge PHP SDK
 
-> This is a fork of the Forge SDK created by Themsaid. It is intended to added additional functionality since the original
+> This is a fork of the Forge SDK created by Themsaid. It is intended to add additional functionality since the original
 repository has been dead for an extended period of time.
 
 To install the SDK in your project you need to require the package via composer:
