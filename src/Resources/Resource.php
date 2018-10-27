@@ -53,6 +53,7 @@ class Resource
      * Convert the key name to camel case.
      *
      * @param $key
+     * @return mixed
      */
     private function camelCase($key)
     {

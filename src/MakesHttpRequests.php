@@ -15,6 +15,9 @@ trait MakesHttpRequests
      *
      * @param  string $uri
      * @return mixed
+     * @throws FailedActionException
+     * @throws NotFoundException
+     * @throws ValidationException
      */
     private function get($uri)
     {
@@ -27,6 +30,9 @@ trait MakesHttpRequests
      * @param  string $uri
      * @param  array $payload
      * @return mixed
+     * @throws FailedActionException
+     * @throws NotFoundException
+     * @throws ValidationException
      */
     private function post($uri, array $payload = [])
     {
@@ -39,6 +45,9 @@ trait MakesHttpRequests
      * @param  string $uri
      * @param  array $payload
      * @return mixed
+     * @throws FailedActionException
+     * @throws NotFoundException
+     * @throws ValidationException
      */
     private function put($uri, array $payload = [])
     {
@@ -51,6 +60,9 @@ trait MakesHttpRequests
      * @param  string $uri
      * @param  array $payload
      * @return mixed
+     * @throws FailedActionException
+     * @throws NotFoundException
+     * @throws ValidationException
      */
     private function delete($uri, array $payload = [])
     {
@@ -64,6 +76,9 @@ trait MakesHttpRequests
      * @param  string $uri
      * @param  array $payload
      * @return mixed
+     * @throws FailedActionException
+     * @throws NotFoundException
+     * @throws ValidationException
      */
     private function request($verb, $uri, array $payload = [])
     {
@@ -83,6 +98,9 @@ trait MakesHttpRequests
     /**
      * @param  \Psr\Http\Message\ResponseInterface $response
      * @return void
+     * @throws FailedActionException
+     * @throws NotFoundException
+     * @throws ValidationException
      */
     private function handleRequestError(ResponseInterface $response)
     {
@@ -107,6 +125,7 @@ trait MakesHttpRequests
      * @param  integer $timeout
      * @param  callable $callback
      * @return mixed
+     * @throws TimeoutException
      */
     public function retry($timeout, $callback)
     {

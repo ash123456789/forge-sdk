@@ -244,11 +244,19 @@ trait ManagesServers
 
     /**
      * Upgrade to latest PHP version.
-     * 
+     *
      * @param $serverId
      */
     public function upgradePHP($serverId)
     {
         $this->post("servers/$serverId/php/upgrade");
+    }
+
+    /**
+     * @param $serverId
+     */
+    public function rebootPHP($serverId)
+    {
+        $this->post("servers/$serverId/php/reboot");
     }
 }
