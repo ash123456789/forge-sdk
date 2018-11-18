@@ -18,7 +18,8 @@ class Forge
         Actions\ManagesCredentials,
         Actions\ManagesCertificates,
         Actions\ManagesFirewallRules,
-        Actions\ManagesMysqlDatabases;
+        Actions\ManagesMysqlDatabases,
+        Actions\ManagesRegions;
 
     /**
      * The Forge API Key.
